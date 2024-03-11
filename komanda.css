@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,500;1,600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.Main {
+    width: 100%;
+    height: 100vh;
+    /* position: relative; */
+}
+
+.nav_top {
+    width: 100%;
+    height: 40px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_input {
+    width: 200px;
+    height: 40px;
+    padding-left: 15px;
+}
+
+.nav_logo_main {
+    padding-top: 10px;
+    /* padding-left: 100px; */
+}
+
+.nav-logo {
+    margin: 15px;
+    color: black;
+}
+
+.nav-logo:hover {
+    color: rgb(255, 183, 0);
+    transition: 0.3s;
+}
+
+.nav_bottom {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: darkblue;
+    /* position: fixed; */
+}
+
+.baku_juniors_logo {
+    width: 180px;
+    height: 140px;
+    margin-top: -15px;
+}
+
+.nav_list {
+    display: flex;
+    margin-top: 45px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.nav_li {
+    margin: 0 25px;
+    color: rgb(255, 183, 0);
+    text-transform: uppercase;
+}
+
+.nav_li:hover {
+    border-bottom: 2px solid rgb(255, 183, 0);
+    transition: 0.1s;
+}
+
+/* div {
+    position: relative;
+} */
+
+.nav_list_a {
+    width: 180px;
+    height: 40px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    color: rgb(255, 183, 0);
+    border-left: 3px solid rgb(255, 183, 0);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.nav_list_a:hover {
+    background-color: rgb(255, 183, 0);
+    color: darkblue;
+    border-left: 3px solid darkblue;
+}
+
+.nav_li_main:hover .nav_list_ul {
+    display: block;
+    transition: 0.5s;
+}
+
+.nav_li_main {
+    position: relative;
+}
+
+.nav_list_ul {
+    display: none;
+    position: absolute;
+    padding-top: 45px;
+}
+
+.img_main {
+    width: 100%;
+    height: 100vh;
+}
+
+.List1_flex {
+    display: flex;
+    /* position: relative; */
+}
+
+.list1_element {
+    /* position: static; */
+}
+
+.img_list_1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/Background\ for\ site\ with\ players.jpg);
+    background-position: flex-start;
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+
+/* .img_list1 {
+    width: 280px;
+    height: 180px;
+    position: absolute;
+    object-fit: cover;
+
+}
+
+.img_1 {
+    width: 280px;
+    height: 180px;
+    clip-path: polygon(45% 0, 100% 0, 100% 100%, 78% 100%);
+    background-color: darkblue;
+    position: relative;
+    border: 1px solid darkblue;
+    opacity: 0.7;
+} */
+
+/* .img_1p {
+    width: 100px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 170px;
+    color: white;
+} */
+.komanda-h1{
+   width: 85%;
+    border-bottom:2px solid darkblue;
+   display: flex;
+   justify-content: center;
+}
+.komanda-h1,
+h2 {
+    
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px 0;
+    margin-left: 140px;
+    color: rgb(255, 183, 0);
+    /* filter: drop-shadow(10px 10px 30px); */
+    
+}
+
+.esas {
+    border-bottom: 2px solid rgb(255, 183, 0);
+}
+
+.list2 {
+    padding: 100px 0;
+    background-color: rgb(241, 241, 241);
+}
+
+.komanda_img {
+    width: 350px;
+    height: 350px;
+    margin: 15px 20px;
+    /* position: relative; */
+    border: 4px solid darkblue;
+    /* transition: 1s; */
+    transition: transform 0.7s ease-in-out;
+    opacity: 0.8;
+}
+
+.komanda_flex {
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+}
+
+.komanda_flex1 {
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 175px;
+    /* position: relative; */
+}
+
+.komanda_img:hover {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    opacity: 1;
+    display: block;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.komanda_img:hover+.clip {
+    margin-top: 30px;
+}
+
+.clip {
+    display: flex;
+    color: darkblue;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.komanda_link {
+    margin: 30px 0;
+}
+
+.name_clip {
+    font-weight: 600 !important;
+    padding-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.list_end_flex {
+    width: 100%;
+    height: 60vh;
+    background-color: darkblue;
+    display: flex;
+    /* justify-content: space-between; */
+    /* color: rgb(255, 183, 0); */
+}
+
+.end_facebook_img_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end_facebook_img {
+    width: 200px;
+    height: 150px;
+}
+
+.baku-h1 {
+    font-size: 30px;
+    text-align: center;
+    /* padding-top: 20px; */
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulseElement {
+    width: 250px;
+    height: 200px;
+    margin-top: 100px;
+    animation: pulseAnimation 1s infinite;
+}
+
+.list_end_left {
+    width: calc(100%/3);
+    height: 60vh;
+    border: 1px solid rgb(255, 183, 0);
+    background-color: rgb(255, 183, 0);
+    color: darkblue;
+    padding-top: 50px;
+}
+
+.list_end_center {
+    width: calc(100%/3);
+    height: 60vh;
+    border: 1px solid darkblue;
+    box-shadow: -3px 1px 13px 4px darkblue;
+    display: flex;
+    justify-content: center;
+    /* box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.list_end_right {
+    width: calc(100%/3);
+    height: 60vh;
+    background-color: rgb(255, 183, 0);
+    color: darkblue;
+}
+
+.list_flex {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+.end_color {
+    color: darkblue;
+    font-size: 15px;
+}
+
+.end_div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid darkblue;
+    background-color: white;
+    text-align: center;
+    padding-top: 6px;
+    margin: 0 7px;
+}
+
+.end_div:hover {
+    /* border: 1px solid white; */
+    /* background-color: ; */
+    color: white;
+}
+
+.right_img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.right_text {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+
+.logo_flex {
+    margin-left: 50px;
+    line-height: 25px;
+}
+
+.end_2024 {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(6, 6, 191);
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    display: none;
+}
+
+.informasiya {
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    padding: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav_list {
+        font-size: 15px;
+    }
+
+    .list_end_flex {
+        flex-direction: column;
+    }
+
+    .list_end_left,
+    .list_end_center,
+    .list_end_right {
+        width: 100%;
+        /* margin: 10px 0; */
+    }
+
+    .list_end_center {
+        background-color: darkblue;
+    }
+
+    .list_end_left,
+    .list_end_right {
+        height: auto;
+    }
+
+    .pulseElement {
+        margin-top: 30px;
+    }
+
+    .right_img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .right_text {
+        font-size: 18px;
+    }
+
+    .end_2024 {
+        display: none;
+    }
+    .komanda_img{
+        width: 280px;
+        height: 280px;
+    }
+    .komanda_flex1{
+        margin-left: 68px;
+    }
+    .komanda-h1{
+        margin-left: 90px;
+    }
+    h2{
+        margin-left: 20px;
+    }
+    .clip{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .icon {
+        display: block;
+        cursor: pointer;
+        /* Cursor'u göstermek için */
+    }
+
+    #myLinks {
+        display: none;
+        /* Bu varsayılan olarak gizli olmalıdır */
+    }
+
+    .nav_list {
+        display: none;
+        position: relative;
+        /* Bu varsayılan olarak gizli olmalıdır */
+    }
+
+    .icon {
+        display: block;
+        cursor: pointer;
+        width: 100px;
+        /* Örnek bir boyut */
+        height: 100px;
+        /* Örnek bir boyut */
+        text-align: center;
+        line-height: 100px;
+        /* Boyutu ortalamak için */
+        color: white;
+        /* İsteğe bağlı, simge rengi */
+    }
+
+    .nav_list {
+        flex-direction: column;
+        width: 150px;
+        height: 220px;
+        background-color: darkblue;
+    }
+
+    .nav_li {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .nav_list_ul {
+        margin-left: 150px;
+        padding-top: 0;
+    }
+
+    .nav_li_main {
+        position: static;
+    }
+.komanda_flex,.komanda_flex1{
+    flex-direction: column;
+}
+.komanda_link{
+margin: auto;
+}
+.komanda_flex1{
+    margin-left: 0;
+}
+.komanda-h1{
+    margin-left: 50px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+}
+.clip{
+    margin-left: 17px;
+    display: block;
+}
+}
+
+@media screen and (max-width: 600px) {
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .end_facebook_img {
+        /* width: 100%; */
+        height: auto;
+    }
+
+    .pulseElement {
+        width: 180px;
+        height: 140px;
+    }
+
+    .nav_list_ul {
+        padding-top: 10px;
+        margin-left: 50px;
+    }
+
+    .nav_li_main {
+        position: static;
+    }
+
+    .nav_logo_main {
+        display: flex;
+    }
+
+    .nav_top {
+        padding: 0;
+    }
+
+    .nav_input {
+        width: 110px;
+        height: 30px;
+        margin-top: 5px;
+    }
+
+    .nav-logo {
+        margin: 8px;
+    }
+.komanda-h1{
+    margin-left: 35px;
+}
+}
