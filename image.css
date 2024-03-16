@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,500;1,600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -65,7 +65,6 @@ body {
     margin-top: 45px;
     font-size: 17px;
     font-weight: 400;
-    /* position: relative; */
 }
 
 .nav_li {
@@ -79,9 +78,9 @@ body {
     transition: 0.1s;
 }
 
-.esas {
-    border-bottom: 2px solid rgb(255, 183, 0);
-}
+/* div {
+    position: relative;
+} */
 
 .nav_list_a {
     width: 180px;
@@ -118,90 +117,62 @@ body {
     padding-top: 45px;
 }
 
+.img_main {
+    width: 100%;
+    height: 100vh;
+}
 
 .List1_flex {
-    width: 1200px;
     display: flex;
-    /* position: relative; */
-    /* opacity: 0; */
+    position: relative;
 }
 
-.active {
-    opacity: 1;
-}
-
-/* .list1_element {
+.list1_element {
     position: static;
-} */
-
-.list2 {
-    padding: 100px 0;
 }
 
-.basliq {
-    width: 70%;
-    margin-left: 15%;
-    font-size: 35px;
-    font-weight: 700;
-    color: rgb(255, 183, 0);
-    padding: 20px 0;
-    border-bottom: 2px solid darkblue;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-}
-
-.forma-flex {
-    display: flex;
-    justify-content: center;
-}
-
-.forma-img {
+.img_list_1 {
     width: 100%;
     height: 100%;
+    background-image: url(./img/Background\ for\ site\ with\ players.jpg);
+    background-position: flex-start;
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
 }
 
-.forma-img-main {
-    width: 600px;
-    height: 700px;
-    /* margin-left: 17%; */
+.img_list1 {
+    width: 280px;
+    height: 180px;
+    position: absolute;
+    object-fit: cover;
+
 }
 
-.forma-h1 {
-    font-size: 25px;
+.left {
+    border: 1px solid darkblue;
+    box-shadow: -1px -1px 2px 3px darkblue;
+    width: 500px;
+    height: 500px;
+    /* position: relative; */
+}
+
+
+.flag_Main {
     display: flex;
-    justify-content: center;
 }
 
-.etrafli {
-    width: 170px;
-    height: 50px;
-    background-color: darkblue;
-    border: 2px solid rgb(255, 183, 0);
-    padding-top: 10px;
-    border-radius: 20%;
-    text-align: center;
-    margin-left: 35.5%;
+.flag {
+    width: 15px;
+    height: 15px;
+    margin-top: 6px;
+    margin-right: 6px;
 }
 
-.etrafli_a {
-    color: rgb(255, 183, 0);
-    font-size: 20px;
-    margin-bottom: 50px;
-}
-
-.etrafli:hover {
+h3 {
     color: darkblue;
-    border: 2px solid darkblue;
-    background-color: rgb(255, 183, 0);
-    transition: 0.5s;
-}
-
-.forma-h1 {
-    font-size: 25px;
-    text-transform: uppercase;
-    color: rgb(255, 183, 0);
-    padding-top: 40px;
+    font-size: 20px;
+    margin: 25px 0 10px;
 }
 
 .list_end_flex {
@@ -301,7 +272,6 @@ body {
 
 .end_div:hover {
     /* border: 1px solid white; */
-    /* background-color: ; */
     color: white;
 }
 
@@ -391,17 +361,11 @@ body {
         display: none;
     }
 
-    .forma-flex {
-        flex-direction: column;
+    .left {
+        width: 450px;
+        height: 450px;
     }
 
-    .forma-img-main {
-        margin: auto;
-    }
-
-    .etrafli {
-        margin: auto;
-    }
 }
 
 @media screen and (max-width: 991px) {
@@ -457,6 +421,10 @@ body {
         position: static;
     }
 
+    .left {
+        width: 400px;
+        height: 400px;
+    }
 
 }
 
@@ -503,24 +471,9 @@ body {
         margin: 8px;
     }
 
-    .basliq {
-        font-size: 30px;
+    .left {
+        width: 300px;
+        height: 300px;
     }
 
-    .forma-h1 {
-        font-size: 20px;
-    }
-
-    .forma-img-main {
-        width: 400px;
-        height: 450px;
-        margin: auto;
-    }
-
-    .etrafli {
-        width: 140px;
-        height: 40px;
-        padding-top: 5px;
-        font-size: 20px;
-    }
 }

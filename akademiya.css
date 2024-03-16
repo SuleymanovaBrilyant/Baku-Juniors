@@ -8,8 +8,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
     list-style: none;
+}
+a{
+    text-decoration: none;
 }
 
 .Main {
@@ -24,7 +26,17 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.btn-outline-success {
+    color: #000; /* Siyah renk */
+    border-color: black; /* Başlangıçta yeşil rengi */
+}
 
+.btn-outline-success:hover {
+    color: white; /* Mavi renk */
+    border-color: #000;
+    background-color: blue; /* Siyah renk */
+    transition: 0.3s;
+}
 .nav_input {
     width: 200px;
     height: 40px;
@@ -115,12 +127,12 @@ body {
 .nav_list_ul {
     display: none;
     position: absolute;
-    padding-top: 45px;
+    padding-top: 40px;
 }
 
 .list2 {
     padding: 100px 0 60px 60px;
-    justify-content: s;
+    /* justify-content: s; */
 }
 
 .basliq {
@@ -149,7 +161,9 @@ body {
     margin-top: 50px;
     line-height: 30px;
 }
-
+ol,ul{
+    padding-left: 0;
+}
 .u14-text {
     margin-left: 47%;
     margin-top: 50px;
@@ -169,14 +183,14 @@ body {
 .akademiya-img {
     width: 450px;
     height: 350px;
-    margin-left: 27%;
+    margin-left: 23%;
     margin-top: 40px;
 }
 
 .akademiya-img1 {
     width: 450px;
     height: 350px;
-    margin-left: 37%;
+    margin-left: 33%;
     margin-top: 40px;
 }
 
@@ -398,12 +412,12 @@ body {
     .akademiya-img {
         width: 400px;
         height: 300px;
-        margin-left: 22%;
+        margin-left: 15%;
     }
     .akademiya-img1 {
         width: 400px;
         height: 300px;
-        margin-left: 31%;
+        margin-left: 25%;
     }
 }
 
@@ -452,8 +466,8 @@ body {
     }
 
     .nav_list_ul {
-        margin-left: 150px;
-        padding-top: 0;
+        margin-left: 100px;
+        margin-top:0;
     }
     .nav_li_main {
         position: static;
@@ -461,12 +475,12 @@ body {
     .akademiya-img {
         width: 350px;
         height: 250px;
-        margin-left: 17%;
+        margin-left: 22%;
     }
     .akademiya-img1 {
         width: 350px;
         height: 250px;
-        margin-left: 28%;
+        margin-left: 32%;
     }
     .u14 , .u17{
         margin-left: 0;
@@ -495,7 +509,7 @@ body {
 
     .nav_list_ul {
         padding-top: 10px;
-        margin-left: 80px;
+        margin-left: 50px;
     }
 
     .nav_li_main {
@@ -520,22 +534,32 @@ body {
         margin: 8px;
     }
     .akademiya-img {
-        width: 300px;
-        height: 200px;
+        width: 250px;
+        height: 170px;
         margin-left: 17%;
     }
     .akademiya-img1 {
-        width: 300px;
-        height: 200px;
-        margin-left: 25%;
+        width: 250px;
+        height: 170px;
+        margin-left: 30%;
     }
     .u14 , .u17{
-        margin-left: 0;
+        margin-left: -25px;
+    }
+    form{
+        margin-left: -35px;
     }
     .basliq{
         margin-left: 10%;
     }
     #akademiyaSelect{
         margin-left: 38%;
+    }
+    .nav_top {
+        padding: 0;
+        justify-content: space-around;
+    }
+    .search{
+        width: 100px;
     }
 }

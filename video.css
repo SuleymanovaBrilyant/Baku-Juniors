@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,500;1,600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -15,6 +15,7 @@ body {
 .Main {
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 
 .nav_top {
@@ -23,6 +24,7 @@ body {
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
+    background-color: white;
 }
 
 .nav_input {
@@ -52,6 +54,13 @@ body {
     display: flex;
     justify-content: space-evenly;
     background-color: darkblue;
+ 
+}
+
+.mainHeader{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 .baku_juniors_logo {
@@ -65,7 +74,6 @@ body {
     margin-top: 45px;
     font-size: 17px;
     font-weight: 400;
-    /* position: relative; */
 }
 
 .nav_li {
@@ -79,9 +87,9 @@ body {
     transition: 0.1s;
 }
 
-.esas {
-    border-bottom: 2px solid rgb(255, 183, 0);
-}
+/* div {
+    position: relative;
+} */
 
 .nav_list_a {
     width: 180px;
@@ -118,66 +126,137 @@ body {
     padding-top: 45px;
 }
 
+.img_main {
+    width: 100%;
+    height: 100vh;
+}
 
 .List1_flex {
-    width: 1200px;
     display: flex;
-    /* position: relative; */
-    /* opacity: 0; */
+    position: relative;
 }
 
-.active {
-    opacity: 1;
-}
-
-/* .list1_element {
+.list1_element {
     position: static;
-} */
+}
 
+.img_list_1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/Background\ for\ site\ with\ players.jpg);
+    background-position: flex-start;
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+}
 
+.img_list1 {
+    width: 280px;
+    height: 180px;
+    position: absolute;
+    object-fit: cover;
 
-.sponsor-flex {
+}
+
+.list2 {
+    padding: 15% 0;
+    background-color: rgb(201, 201, 201);
+}
+
+.list2 h1:first-child {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(255, 183, 0);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.swiper-video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.list2 {
-    padding: 70px 0;
+swiper-slide video {
+    /* display: sw </swiper-slidek; */
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
 }
 
-.sponsor-h1 {
-    width: 70%;
-    padding: 25px;
-    margin-left: 15%;
-    margin-bottom: 80px;
-    font-size: 35px;
-    font-weight: 700;
-    /* filter: drop-shadow(10px 10px 30px); */
-    color: rgb(255, 183, 0);
-    border-bottom: 2px solid darkblue;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
+
+swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.sponsor-logo-main {
-    width: 300px;
-    height: 170px;
-    border: 1px solid darkblue;
-    box-shadow: 2px 2px 2px 3px;
-    border-radius: 10px;
-    margin: 50px;
+swiper-slide {
+    background-size: cover;
+    background-position: center;
 }
 
-.sponsor-logo-main:hover {
-    transform: scale(1.1);
-    transition: 1.1s;
+.mySwiper {
+    height: 80%;
+    width: 50%;
 }
 
-.sponsor-logo {
+.mySwiper2 {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    overflow-y: auto;
+}
+
+.mySwiper2 swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.mySwiper2 .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+swiper-slide video {
+    /* display: sw </swiper-slidek; */
     width: 100%;
     height: 100%;
+    object-fit: contain;
+}
+
+.flag_Main {
+    display: flex;
+}
+
+.flag {
+    width: 15px;
+    height: 15px;
+    margin-top: 6px;
+    margin-right: 6px;
+}
+
+h3 {
+    color: darkblue;
+    font-size: 20px;
+    margin: 25px 0 10px;
 }
 
 .list_end_flex {
@@ -194,7 +273,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 
 .end_facebook_img {
     width: 200px;
@@ -278,7 +356,6 @@ body {
 
 .end_div:hover {
     /* border: 1px solid white; */
-    /* background-color: ; */
     color: white;
 }
 
@@ -367,6 +444,19 @@ body {
     .end_2024 {
         display: none;
     }
+
+    .left {
+        width: 450px;
+        height: 450px;
+    }
+
+    .Naile_flex_Main {
+        margin-left: 0;
+    }
+
+    .nailespan {
+        height: 450px;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -421,19 +511,25 @@ body {
     .nav_li_main {
         position: static;
     }
-    .sponsor-flex {
-        display: flex;
-        flex-direction: column;
+
+    .left {
+        width: 400px;
+        height: 400px;
     }
 
-    .sponsor-h1{
-        width: 65%;
-        font-size: 32px;
-        margin-left: 17%;
+    .Naile_flex_Main {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .nailespan {
+        height: 400px;
     }
 }
 
 @media screen and (max-width: 600px) {
+
     h2 {
         font-size: 16px;
     }
@@ -474,17 +570,31 @@ body {
     .nav-logo {
         margin: 8px;
     }
-    .sponsor-flex {
-        display: flex;
-        flex-direction: column;
+
+    .left {
+        width: 300px;
+        height: 300px;
     }
-    .sponsor-h1{
-        width: 60%;
+
+    .name {
         font-size: 30px;
-        margin-left: 20%;
     }
-    .sponsor-logo-main{
-        width: 250px;
-        height: 150px;
+
+    .name_text {
+        width: 350px;
+        font-size: 15px;
+        /* margin: 0 auto; */
+    }
+
+    .Naile_flex_Main {
+        margin-left: 0;
+    }
+
+    .right {
+        margin-left: 50px;
+    }
+
+    .nailespan {
+        height: 300px;
     }
 }

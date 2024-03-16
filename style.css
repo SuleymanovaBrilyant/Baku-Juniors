@@ -11,15 +11,20 @@ body {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
-
 }
 
 
 .Main {
     width: 100%;
     height: 100vh;
+    position: relative;
+}
+.Main>div:first-child{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
 }
 
 .nav_top {
@@ -28,6 +33,7 @@ a{
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
+    background-color: white;
 }
 
 .nav_input {
@@ -120,7 +126,7 @@ a{
 .nav_list_ul {
     display: none;
     position: absolute;
-    padding-top: 45px;
+    padding-top: 40px;
 }
 
 .container {
@@ -171,13 +177,15 @@ a{
     background-size: cover;
     background-image: url(./img/mesq-img.jpg);
 }
-.time-basliq{
+
+.time-basliq {
     font-size: 30px;
     color: white;
     text-transform: uppercase;
     padding-bottom: 10px;
     font-weight: 700;
 }
+
 .time {
     font-family: Arial, sans-serif;
     /* background-color: darkblue; */
@@ -189,7 +197,7 @@ a{
     /* width: 100%;
     height: 100vh; */
     position: absolute;
-   flex-direction: column;
+    flex-direction: column;
 }
 
 .container {
@@ -240,6 +248,47 @@ a{
 .img_1p {
     margin: 0;
 }
+.carusel-main{
+    padding-top: 150px;
+}
+
+.information {
+    margin: 50px 0;
+}
+
+.information>div {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.information>div a {
+    color: darkblue;
+}
+
+.image,
+.video {
+    width: 150px;
+    height: 100px;
+    border: 2px solid darkblue;
+    box-shadow: 2px 1px 5px 2px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 35px;
+    margin: 20px;
+}
+
+.image:hover,
+.video:hover {
+    width: 160px;
+    height: 115px;
+    animation: forwards;
+    transition: 0.3s;
+    font-size: 45px;
+    background-color: #f2f2f2;
+}
 
 .table_main {
     display: flex;
@@ -247,9 +296,9 @@ a{
     align-items: center;
 }
 
-.list2 {
-    padding-top: 50px;
-}
+/* .list2 {
+    padding-top: 0px;
+} */
 
 table {
     width: 700px;
@@ -309,7 +358,17 @@ td {
     margin: 20px 0;
     /* position: relative; */
 }
+.btn-outline-success {
+    color: #000; /* Siyah renk */
+    border-color: black; /* Başlangıçta yeşil rengi */
+}
 
+.btn-outline-success:hover {
+    color: white; /* Mavi renk */
+    border-color: #000;
+    background-color: blue; /* Siyah renk */
+    transition: 0.3s;
+}
 .list4 {
     position: relative;
     width: 100%;
@@ -384,6 +443,9 @@ td {
     text-transform: uppercase;
     color: rgb(255, 183, 0);
 }
+ol,ul{
+    padding-left: 0;
+}
 
 
 
@@ -425,6 +487,7 @@ td {
     justify-content: center;
     align-items: center;
 }
+
 .end_facebook_img {
     width: 200px;
     height: 150px;
@@ -542,6 +605,7 @@ td {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
 }
 
 .icon {
@@ -554,6 +618,12 @@ td {
     font-weight: 700;
     padding: 0;
 }
+
+.bakujuniors-map {
+    width: 100%;
+    height: 550px;
+}
+
 @media screen and (max-width: 1200px) {
     .nav_list {
         font-size: 15px;
@@ -643,18 +713,46 @@ td {
     }
 
     .nav_list_ul {
-        margin-left: 150px;
-        padding-top: 0;
+        margin-left: 80px;
+        margin-top: -50px;
     }
+
     .nav_li_main {
         position: static;
+    }
+    .list5-background {
+        width: 100%;
+        height: 500px;
+    }
+
+    .bakujuniors-map {
+        height: 500px;
+    }
+
+    .thankyou {
+        font-size: 30px;
+        padding-top: 25px;
+    }
+    .carusel-main{
+        display: none;
+    }
+    .Main>div:first-child{
+        position: fixed;
+        top: 0;
+    }
+    .information{
+        margin: 100px 0 0 0;
+    }
+    .swiper-flex{
+        flex-direction: column;
     }
 }
 
 @media screen and (max-width: 600px) {
-.list2{
-    padding: 100px 0 0 0;
-}
+    /* .list2 {
+        padding: 10px 0 0 0;
+    } */
+
     .end_facebook_img {
         /* width: 100%; */
         height: auto;
@@ -667,7 +765,7 @@ td {
 
     .nav_list_ul {
         padding-top: 10px;
-        margin-left: 80px;
+        margin-left: 50px;
     }
 
     .nav_li_main {
@@ -680,8 +778,9 @@ td {
 
     .nav_top {
         padding: 0;
+        justify-content: space-around;
     }
-
+   
     .nav_input {
         width: 110px;
         height: 30px;
@@ -691,4 +790,32 @@ td {
     .nav-logo {
         margin: 8px;
     }
+
+    .list5-background {
+        width: 100%;
+        height: 350px;
+    }
+
+    .bakujuniors-map {
+        height: 350px;
+    }
+
+    .thankyou {
+        font-size: 25px;
+        padding-top: 25px;
+    }
+
+    .carusel-main {
+        display: none;
+    }
+    .search{
+        width: 100px;
+    }
+   .Main>div:first-child{
+    position: fixed;
+    top: 0;
+   }
+   .information{
+    margin: 100px 0 0 0 ;
+   }
 }

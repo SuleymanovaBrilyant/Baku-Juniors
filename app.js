@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 document.addEventListener("DOMContentLoaded", function() {
   // Geri sayımı başlatmak için son tarihi belirleyin (milisaniye cinsinden)
-  var countDownDate = new Date("March 10, 2024 5:00:00").getTime();
+  var countDownDate = new Date("March 17, 2024 4:00:00").getTime();
 
   // Her saniyede bir geri sayımı güncellemek için bir interval tanımlayın
   var x = setInterval(function() {
@@ -96,3 +96,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  var y = document.querySelector(".nav_list");
+  if (x.style.display === "block") {
+      x.style.display = "none";
+      y.style.display = "none"; // Nav list de kapansın
+  } else {
+      x.style.display = "block";
+      y.style.display = "flex"; // Nav list de açılsın
+  }
+}

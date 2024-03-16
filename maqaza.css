@@ -8,8 +8,24 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+a{
     text-decoration: none;
+}
+ol,ul{
     list-style: none;
+    padding-left: 0;
+}
+.btn-outline-success {
+    color: #000; /* Siyah renk */
+    border-color: black; /* Başlangıçta yeşil rengi */
+}
+
+.btn-outline-success:hover {
+    color: white; /* Mavi renk */
+    border-color: #000;
+    background-color: blue; /* Siyah renk */
+    transition: 0.3s;
 }
 
 .Main {
@@ -115,7 +131,7 @@ body {
 .nav_list_ul {
     display: none;
     position: absolute;
-    padding-top: 45px;
+    padding-top: 40px;
 }
 
 
@@ -336,6 +352,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
 }
 
 .icon {
@@ -449,7 +466,7 @@ body {
     }
 
     .nav_list_ul {
-        margin-left: 150px;
+        margin-left: 100px;
         padding-top: 0;
     }
 
@@ -522,5 +539,12 @@ body {
         height: 40px;
         padding-top: 5px;
         font-size: 20px;
+    }
+    .nav_top {
+        padding: 0;
+        justify-content: space-around;
+    }
+    .search{
+        width: 100px;
     }
 }
