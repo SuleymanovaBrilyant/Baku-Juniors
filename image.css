@@ -8,13 +8,44 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+a {
     text-decoration: none;
+}
+
+ol,
+ul {
     list-style: none;
+    padding-left: 0;
+}
+
+.btn-outline-success {
+    color: #000;
+    /* Siyah renk */
+    border-color: black;
+    /* Başlangıçta yeşil rengi */
+}
+
+.btn-outline-success:hover {
+    color: white;
+    /* Mavi renk */
+    border-color: #000;
+    background-color: blue;
+    /* Siyah renk */
+    transition: 0.3s;
 }
 
 .Main {
     width: 100%;
     height: 100vh;
+    position: relative;
+}
+
+.mainHeader {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
 }
 
 .nav_top {
@@ -23,6 +54,7 @@ body {
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
+    background-color: white;
 }
 
 .nav_input {
@@ -52,6 +84,13 @@ body {
     display: flex;
     justify-content: space-evenly;
     background-color: darkblue;
+
+}
+
+.mainHeader {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 
 .baku_juniors_logo {
@@ -114,7 +153,7 @@ body {
 .nav_list_ul {
     display: none;
     position: absolute;
-    padding-top: 45px;
+    padding-top: 40px;
 }
 
 .img_main {
@@ -146,17 +185,7 @@ body {
     height: 180px;
     position: absolute;
     object-fit: cover;
-
 }
-
-.left {
-    border: 1px solid darkblue;
-    box-shadow: -1px -1px 2px 3px darkblue;
-    width: 500px;
-    height: 500px;
-    /* position: relative; */
-}
-
 
 .flag_Main {
     display: flex;
@@ -175,6 +204,33 @@ h3 {
     margin: 25px 0 10px;
 }
 
+.list2{
+    padding: 100px 0;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flexdiv{
+    width: 400px;
+    height: 350px;
+    margin: 20px;
+    object-fit: cover;
+}
+.flexdiv1{
+    width: 400px;
+    height: 380px;
+    margin: 20px;
+    object-fit: cover;
+}
+.height{
+    width: 400px;
+    height: 550px;
+    margin: 20px;
+    object-fit: cover;
+}
 .list_end_flex {
     width: 100%;
     height: 60vh;
@@ -306,6 +362,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
 }
 
 .icon {
@@ -366,6 +423,13 @@ h3 {
         height: 450px;
     }
 
+    .Naile_flex_Main {
+        margin-left: 0;
+    }
+
+    .nailespan {
+        height: 450px;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -426,6 +490,19 @@ h3 {
         height: 400px;
     }
 
+    .Naile_flex_Main {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .nailespan {
+        height: 400px;
+    }
+
+    .list2 {
+        padding-top: 25%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -476,4 +553,46 @@ h3 {
         height: 300px;
     }
 
+    .name {
+        font-size: 30px;
+    }
+
+    .name_text {
+        width: 350px;
+        font-size: 15px;
+        /* margin: 0 auto; */
+    }
+
+    .Naile_flex_Main {
+        margin-left: 0;
+    }
+
+    .right {
+        margin-left: 50px;
+    }
+
+    .nailespan {
+        height: 300px;
+    }
+
+    .list2 {
+        padding-top: 55%;
+    }
+
+    .list2>h1:first-child {
+        font-size: 30px;
+    }
+
+    .swiper-video {
+        height: 50%;
+    }
+
+    .nav_top {
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .search {
+        width: 100px;
+    }
 }

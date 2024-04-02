@@ -10,13 +10,21 @@ body {
     box-sizing: border-box;
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
 .Main {
     width: 100%;
     height: 100vh;
+    position: relative;
+}
+
+.Main>div:first-child {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
 }
 
 .nav_top {
@@ -25,18 +33,25 @@ a{
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
+    background-color: white;
 }
+
 .btn-outline-success {
-    color: #000; /* Siyah renk */
-    border-color: black; /* Başlangıçta yeşil rengi */
+    color: #000;
+    /* Siyah renk */
+    border-color: black;
+    /* Başlangıçta yeşil rengi */
 }
 
 .btn-outline-success:hover {
-    color: white; /* Mavi renk */
+    color: white;
+    /* Mavi renk */
     border-color: #000;
-    background-color: blue; /* Siyah renk */
+    background-color: blue;
+    /* Siyah renk */
     transition: 0.3s;
 }
+
 .nav_input {
     width: 200px;
     height: 40px;
@@ -131,7 +146,7 @@ a{
 }
 
 .list2 {
-    padding: 100px 0 60px 60px;
+    padding: 15% 0 60px 60px;
     /* justify-content: s; */
 }
 
@@ -161,9 +176,12 @@ a{
     margin-top: 50px;
     line-height: 30px;
 }
-ol,ul{
+
+ol,
+ul {
     padding-left: 0;
 }
+
 .u14-text {
     margin-left: 47%;
     margin-top: 50px;
@@ -183,7 +201,7 @@ ol,ul{
 .akademiya-img {
     width: 450px;
     height: 350px;
-    margin-left: 23%;
+    margin-left: 26%;
     margin-top: 40px;
 }
 
@@ -414,6 +432,7 @@ ol,ul{
         height: 300px;
         margin-left: 15%;
     }
+
     .akademiya-img1 {
         width: 400px;
         height: 300px;
@@ -467,36 +486,48 @@ ol,ul{
 
     .nav_list_ul {
         margin-left: 100px;
-        margin-top:0;
+        margin-top: 0;
     }
+
     .nav_li_main {
         position: static;
     }
+
     .akademiya-img {
         width: 350px;
         height: 250px;
         margin-left: 22%;
     }
+
     .akademiya-img1 {
         width: 350px;
         height: 250px;
         margin-left: 32%;
     }
-    .u14 , .u17{
+
+    .u14,
+    .u17 {
         margin-left: 0;
     }
-    .basliq{
+
+    .basliq {
         margin-left: 10%;
     }
-    #akademiyaSelect{
+
+    #akademiyaSelect {
         margin-left: 38%;
+    }
+
+    .list2 {
+        padding-top: 25%;
     }
 }
 
 @media screen and (max-width: 600px) {
-.list2{
-    padding: 100px 0 0 0;
-}
+    .list2 {
+        padding: 100px 0 0 0;
+    }
+
     .end_facebook_img {
         /* width: 100%; */
         height: auto;
@@ -533,33 +564,46 @@ ol,ul{
     .nav-logo {
         margin: 8px;
     }
+
     .akademiya-img {
         width: 250px;
         height: 170px;
         margin-left: 17%;
     }
+
     .akademiya-img1 {
         width: 250px;
         height: 170px;
         margin-left: 30%;
     }
-    .u14 , .u17{
+
+    .u14,
+    .u17 {
         margin-left: -25px;
     }
-    form{
+
+    form {
         margin-left: -35px;
     }
-    .basliq{
+
+    .basliq {
         margin-left: 10%;
     }
-    #akademiyaSelect{
+
+    #akademiyaSelect {
         margin-left: 38%;
     }
+
     .nav_top {
         padding: 0;
         justify-content: space-around;
     }
-    .search{
+
+    .search {
         width: 100px;
+    }
+
+    .list2 {
+        padding-top: 55%;
     }
 }

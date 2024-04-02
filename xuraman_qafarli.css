@@ -8,13 +8,44 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+a {
     text-decoration: none;
+}
+
+ol,
+ul {
     list-style: none;
+    padding-left: 0;
+}
+
+.btn-outline-success {
+    color: #000;
+    /* Siyah renk */
+    border-color: black;
+    /* Başlangıçta yeşil rengi */
+}
+
+.btn-outline-success:hover {
+    color: white;
+    /* Mavi renk */
+    border-color: #000;
+    background-color: blue;
+    /* Siyah renk */
+    transition: 0.3s;
 }
 
 .Main {
     width: 100%;
     height: 100vh;
+    position: relative;
+}
+
+.Main>div:first-child{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
 }
 
 .nav_top {
@@ -23,6 +54,7 @@ body {
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
+    background-color: white;
 }
 
 .nav_input {
@@ -114,7 +146,7 @@ body {
 .nav_list_ul {
     display: none;
     position: absolute;
-    padding-top: 45px;
+    padding-top: 40px;
 }
 
 .img_main {
@@ -186,7 +218,7 @@ body {
 .Naile_flex_Main {
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 15%;
     padding-bottom: 100px;
     margin-left: -100px;
     /* position: relative; */
@@ -369,6 +401,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
 }
 
 .icon {
@@ -499,10 +532,12 @@ h3 {
         flex-direction: column;
         align-items: center;
         margin-left: 20px;
+        padding-top: 30%;
     }
     .nailespan{
         height: 400px;
     }
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -563,6 +598,7 @@ h3 {
         /* margin: 0 auto; */
     }
     .Naile_flex_Main{
+        padding-top: 55%;
         margin-left: 0;
     }
     .right{
@@ -570,5 +606,12 @@ h3 {
     }
     .nailespan{
         height: 300px;
+    }
+    .nav_top {
+        padding: 0;
+        justify-content: space-around;
+    }
+    .search {
+        width: 100px;
     }
 }

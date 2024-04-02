@@ -39,7 +39,12 @@ ul {
 .Main {
     width: 100%;
     height: 100vh;
-    /* position: relative; */
+    position: relative;
+}
+.Main>div:first-child{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
 }
 
 .nav_top {
@@ -48,6 +53,7 @@ ul {
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
+    background-color: white;
 }
 
 .nav_input {
@@ -216,7 +222,7 @@ h2 {
 }
 
 .list2 {
-    padding: 100px 0;
+    padding: 15% 0 100px 0;
     background-color: rgb(241, 241, 241);
 }
 
@@ -571,6 +577,9 @@ h2 {
         margin-left: 17px;
         display: block;
     }
+    .list2{
+        padding-top: 25%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -627,5 +636,8 @@ h2 {
 
     .search {
         width: 100px;
+    }
+    .list2{
+        padding-top: 55%;
     }
 }

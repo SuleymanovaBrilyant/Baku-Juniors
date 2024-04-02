@@ -24,3 +24,14 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
+  // function myFunction() {
+  //   var x = document.getElementById("myLinks");
+  //   var y = document.querySelector(".nav_list");
+  //   if (x.style.display === "block") {
+  //       x.style.display = "none";
+  //       y.style.display = "none"; // Nav list de kapansın
+  //   } else {
+  //       x.style.display = "block";
+  //       y.style.display = "flex"; // Nav list de açılsın
+  //   }
+  // }
