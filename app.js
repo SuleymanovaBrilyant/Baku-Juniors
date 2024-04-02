@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 document.addEventListener("DOMContentLoaded", function() {
   // Geri sayımı başlatmak için son tarihi belirleyin (milisaniye cinsinden)
-  var countDownDate = new Date("March 17, 2024 4:00:00").getTime();
+  var countDownDate = new Date("Aprel 13, 2024 4:00:00").getTime();
 
   // Her saniyede bir geri sayımı güncellemek için bir interval tanımlayın
   var x = setInterval(function() {
